@@ -6,4 +6,54 @@
     android:layout_height="match_parent"
     tools:context=".IntroActivity">
 
+    <ImageView
+        android:id="@+id/bggradient"
+        android:layout_width="1024dp"
+        android:layout_height="500dp"
+        android:rotation="90"
+        android:src="@drawable/gradientbg2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lorem Ipsum dolor"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pic1"
+        app:layout_constraintVertical_bias="0.411" />
+
+    <ImageView
+        android:id="@+id/pic1"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="381dp"
+        android:src="@drawable/intro1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/buttonNext"
+        android:layout_width="361dp"
+        android:layout_height="60dp"
+        android:src="@drawable/button_gradient"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bggradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

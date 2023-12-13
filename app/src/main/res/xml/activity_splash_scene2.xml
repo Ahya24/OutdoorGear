@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="2140"
+        motion:motionInterpolator="cubic(0,1,1,1)"
+        motion:autoTransition="animateToEnd">
+       <KeyFrameSet>
+       </KeyFrameSet>
+        <OnSwipe motion:springStiffness="608.55"
+            motion:springDamping="0.0"
+            motion:springMass="1.2"
+            motion:maxAcceleration="27.55"
+            motion:maxVelocity="2.29" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="110dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="250dp"
+            android:visibility="invisible" />
+        <Constraint
+            android:id="@+id/textView"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="500dp"
+            android:visibility="invisible"
+            android:scaleX="0"
+            android:scaleY="0"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="110dp" />
+        <Constraint
+            android:id="@+id/skyBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/textView"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="388dp"
+            motion:transitionEasing="cubic(0,0.02,0.8,0.8)"
+            motion:pathMotionArc="none"
+            android:visibility="visible"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="110dp"
+            android:layout_marginLeft="100dp" />
+        <Constraint
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="110dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="240dp"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:visibility="visible" />
+        <Constraint
+            android:id="@+id/skyBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+    </ConstraintSet>
+</MotionScene>

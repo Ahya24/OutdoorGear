@@ -10,7 +10,8 @@
         android:id="@+id/bggradient"
         android:layout_width="1024dp"
         android:layout_height="500dp"
-        android:rotation="90"
+        android:layout_marginBottom="336dp"
+        android:rotation="270"
         android:src="@drawable/gradientbg2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,7 +24,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="381dp"
-        android:src="@drawable/intro1"
+        android:src="@drawable/intro2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.47"
@@ -35,7 +36,7 @@
         android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Selamat Datang !"
+        android:text="Mudah Untuk Diakses"
         android:textColor="@color/grey"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -54,7 +55,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="50dp"
-        android:text="Temukan pengalaman outdoor tanpa batas dengan menyewa peralatan terbaik untuk petualangan Anda."
+        android:text="Tersedia berbagai fitur untuk memudahkan Anda memilih peralatan hanya dengan Smartphone"
         android:textAlignment="center"
         android:textColor="@color/grey"
         android:textSize="20sp"
@@ -63,28 +64,33 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text1" />
 
-    <ImageView
+    <Button
         android:id="@+id/buttonNext"
-        android:layout_width="361dp"
-        android:layout_height="60dp"
-        android:src="@drawable/button_gradient"
-        android:layout_marginBottom="70dp"
-        app:layout_constraintBottom_toBottomOf="@+id/bggradient"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="99dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="56dp"
+        android:backgroundTint="@color/grey"
+        android:text="Next"
+        android:textColor="@color/grey_100"
+        android:textStyle="bold|italic"
+        app:cornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/skip"
+        android:backgroundTint="@color/grey_100"
+        android:text="Skip"
+        android:textStyle="bold|italic"
+        android:textColor="@color/grey_400"
+        android:layout_width="99dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="56dp"
+        app:cornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonNext"
+        app:layout_constraintHorizontal_bias="0.947"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/getStarted"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Get Started !"
-        android:textColor="@color/white"
-        android:textSize="23sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/buttonNext"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/buttonNext" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

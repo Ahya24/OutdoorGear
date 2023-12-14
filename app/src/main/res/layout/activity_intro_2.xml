@@ -17,19 +17,28 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
+        android:id="@+id/art2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.15"
+        android:rotation="30"
+        android:src="@drawable/art3"
+        app:layout_constraintTop_toBottomOf="@id/pic1" />
+
+    <ImageView
         android:id="@+id/pic1"
         android:layout_width="294dp"
         android:layout_height="256dp"
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="381dp"
-        android:src="@drawable/intro2"
+        android:src="@drawable/intro4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.457" />
+        app:layout_constraintVertical_bias="0.327" />
 
     <TextView
         android:id="@+id/text1"

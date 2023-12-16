@@ -1,6 +1,20 @@
 <resources>
-    <string name="app_name">OutdoorGear</string>
-    <string name="outdoor_gear">Outdoor Gear</string>
-    <string name="todo">TODO</string>
-    <string name="todobg">TODO</string>
+   <string name="start">
+        Created By :
+        /n Kelompok 1: /n
+    </string>
+
+    <string name="startDesc">
+        /n Ahya Taufiq Akbar
+        /n Anisa Davina Salsabilla
+        /n Debi Dela Kurniawati
+        /n Deo Triyanuar Putra
+        /n Wildan Ihza Mahbuby
+    </string>
+    <string name="screen1">Selamat Datang !</string>
+    <string name="screen1desc">Temukan pengalaman outdoor tanpa batas dengan peralatan terbaik untuk petualangan Anda</string>
+    <string name="screen2">Mudah Untuk Diakses</string>
+    <string name="screen2desc">Tersedia berbagai fitur untuk memudahkan Anda memilih peralatan hanya dengan Smartphone</string>
+    <string name="screen3">Berpetualang Bersama</string>
+    <string name="screen3desc">Berkumpul dan nikmati waktu bersama dengan teman dan keluarga menggunakan peralatan professional</string>
 </resources>

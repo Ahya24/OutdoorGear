@@ -4,18 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".IntroActivity">
-
-    <ImageView
-        android:id="@+id/bggradient"
-        android:layout_width="1024dp"
-        android:layout_height="500dp"
-        android:layout_marginBottom="376dp"
-        android:rotation="270"
-        android:src="@drawable/gradientbg2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+    android:background="@drawable/gradientbg2">
 
     <ImageView
         android:id="@+id/art2"
@@ -43,26 +32,25 @@
 
     <TextView
         android:id="@+id/kelompok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="Created By"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:layout_marginTop="20dp"
-        app:layout_constraintTop_toBottomOf="@+id/pic1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pic1" />
 
     <TextView
         android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:text="Kelompok 1"
-        android:textColor="@color/grey"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:layout_marginTop="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -78,7 +66,6 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="50dp"
         android:text="01    Ahya Taufiq Akbar"
-        android:textColor="@color/grey"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -87,75 +74,60 @@
 
     <TextView
         android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="02    Anisa Davina Salsabila"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text2"/>
+        app:layout_constraintTop_toBottomOf="@+id/text2" />
 
     <TextView
         android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="05    Debi Dela Kurniawati"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text3"/>
+        app:layout_constraintTop_toBottomOf="@+id/text3" />
 
     <TextView
         android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="06    Deo Triyanuar Putra"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text4"/>
+        app:layout_constraintTop_toBottomOf="@+id/text4" />
 
     <TextView
         android:id="@+id/text6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="21    Wildan Ihza Mahbuby"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text5"/>
+        app:layout_constraintTop_toBottomOf="@+id/text5" />
 
     <Button
-        android:id="@+id/buttonNext"
-        android:layout_width="99dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="56dp"
+        android:id="@+id/startButton"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="67dp"
         android:backgroundTint="@color/grey"
-        android:text="Next"
-        android:textColor="@color/grey_100"
+        android:text="Get Started !"
+        android:textColor="@color/white"
         android:textStyle="bold|italic"
         app:cornerRadius="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/skip"
-        android:backgroundTint="@color/grey_100"
-        android:text="Skip"
-        android:textStyle="bold|italic"
-        android:textColor="@color/grey_400"
-        android:layout_width="99dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="56dp"
-        app:cornerRadius="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/buttonNext"
-        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

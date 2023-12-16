@@ -28,14 +28,11 @@ public class SignUpActivity extends AppCompatActivity {
     private Button signupButton;
     private TextView loginRedirectText;
 
-    public class User {
+    // Inner class User bisa diubah menjadi static karena tidak mengakses instance variabel SignUpActivity
+    public static class User {
         private String userId;
         private String email;
-        private String password;  // Sesuaikan dengan informasi tambahan yang ingin disimpan
-
-        // Konstruktor kosong diperlukan untuk Firebase
-        public User() {
-        }
+        private String password;
 
         // Konstruktor dengan parameter
         public User(String userId, String email, String password) {
@@ -70,7 +67,6 @@ public class SignUpActivity extends AppCompatActivity {
         }
     }
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -87,26 +83,21 @@ public class SignUpActivity extends AppCompatActivity {
         signupButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final String user = signupEmail.getText().toString().trim();
-                String pass = signupPassword.getText().toString().trim();
+                final String userEmail = signupEmail.getText().toString().trim();
+                String password = signupPassword.getText().toString().trim();
 
-                // Inisialisasi variabel user
-                final String userEmail;
-
-                if (user.isEmpty()) {
+                if (userEmail.isEmpty()) {
                     signupEmail.setError("Email cannot be empty");
-                    return; // Stop execution if the email is empty
-                } else {
-                    userEmail = user;  // Set nilai user jika tidak kosong
+                    return;
                 }
 
-                if (pass.isEmpty()) {
+                if (password.isEmpty()) {
                     signupPassword.setError("Password cannot be empty");
-                    return; // Stop execution if the password is empty
+                    return;
                 }
 
                 // Continue with Firebase authentication
-                auth.createUserWithEmailAndPassword(userEmail, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                auth.createUserWithEmailAndPassword(userEmail, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
@@ -117,7 +108,7 @@ public class SignUpActivity extends AppCompatActivity {
                             FirebaseUser currentUser = auth.getCurrentUser();
                             String userId = currentUser.getUid();
 
-                            User newUser = new User(userId, userEmail, pass); // Sesuaikan dengan struktur User Anda
+                            User newUser = new User(userId, userEmail, password);
                             databaseReference.child(userId).setValue(newUser);
 
                             // Lanjutkan ke LoginActivity atau lakukan tindakan lainnya
@@ -130,8 +121,6 @@ public class SignUpActivity extends AppCompatActivity {
                 });
             }
         });
-
-
 
         loginRedirectText.setOnClickListener(new View.OnClickListener() {
             @Override

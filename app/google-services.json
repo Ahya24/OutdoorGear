@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "602848472018",
+    "project_id": "outdoorgear-77b9a",
+    "storage_bucket": "outdoorgear-77b9a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602848472018:android:c5dfb4473167b2a70e760b",
+        "android_client_info": {
+          "package_name": "com.example.outdoorgear"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXFxmn9Xz36AzhsDO_9Wfw_to5AhiEjVw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

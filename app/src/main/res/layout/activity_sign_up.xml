@@ -43,6 +43,7 @@
                 android:layout_marginTop="40dp"
                 android:padding="8dp"
                 android:hint="Email"
+                android:textColorHint="@color/grey_400"
                 android:drawableLeft="@drawable/baseline_person_24"
                 android:drawablePadding="8dp"
                 android:textColor="@color/black"/>
@@ -55,6 +56,8 @@
                 android:layout_marginTop="20dp"
                 android:padding="8dp"
                 android:hint="Password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/grey_400"
                 android:drawableLeft="@drawable/baseline_lock_24"
                 android:drawablePadding="8dp"
                 android:textColor="@color/black"/>

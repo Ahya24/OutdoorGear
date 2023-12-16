@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "602848472018",
+    "firebase_url": "https://outdoorgear-77b9a-default-rtdb.asia-southeast1.firebasedatabase.app",
     "project_id": "outdoorgear-77b9a",
     "storage_bucket": "outdoorgear-77b9a.appspot.com"
   },
@@ -12,7 +13,20 @@
           "package_name": "com.example.outdoorgear"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "602848472018-dus4h4ig1vrc1ltup4llsd21so56km9p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.outdoorgear",
+            "certificate_hash": "877a5ad3693606646475e84abaa41d4952076cc3"
+          }
+        },
+        {
+          "client_id": "602848472018-i5p6mpiesmuej2e8f0lcif3oirgrj10m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyAXFxmn9Xz36AzhsDO_9Wfw_to5AhiEjVw"
@@ -20,7 +34,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602848472018-i5p6mpiesmuej2e8f0lcif3oirgrj10m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

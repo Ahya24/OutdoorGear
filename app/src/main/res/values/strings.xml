@@ -17,4 +17,6 @@
     <string name="screen2desc">Tersedia berbagai fitur untuk memudahkan Anda memilih peralatan hanya dengan Smartphone</string>
     <string name="screen3">Berpetualang Bersama</string>
     <string name="screen3desc">Berkumpul dan nikmati waktu bersama dengan teman dan keluarga menggunakan peralatan professional</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -8,10 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="lavender">#8692f7</color>
+    <color name="lavender2">#5B6BF4</color>
     <color name="grey">#808080</color>
 
-<!--    <color name="black">#FF000000</color>-->
-<!--    <color name="white">#FFFFFFFF</color>-->
     <color name="grey_100">#E2EFF1</color>
     <color name="grey_400">#607274</color>
     <color name="colorPrimary">#071A52</color>
@@ -21,11 +20,13 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="colorBrown">#6c3c0c</color>
-<!--    <color name="purple_200">#FFBB86FC</color>-->
-<!--    <color name="purple_500">#FF6200EE</color>-->
-<!--    <color name="purple_700">#FF3700B3</color>-->
-<!--    <color name="teal_200">#FF03DAC5</color>-->
-<!--    <color name="teal_700">#FF018786</color>-->
     <color name="teal_100">#00FFFD</color>
-<!--    <color name="grey">#27374D</color>-->
+
+
+    <color name="colorRust">#B04C2A</color>
+    <color name="colorFlame">#DC6F3B</color>
+    <color name="colorGunmetal">#10323C</color>
+    <color name="colorMoonstone">#6BB3BE</color>
+    <color name="colorSlategray">#6E7F83</color>
+
 </resources>

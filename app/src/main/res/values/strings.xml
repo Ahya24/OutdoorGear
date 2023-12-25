@@ -19,4 +19,6 @@
     <string name="screen3desc">Berkumpul dan nikmati waktu bersama dengan teman dan keluarga menggunakan peralatan professional</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dasboard">DASBOARD</string>
+    <string name="elon_musk">Elon Musk</string>
 </resources>

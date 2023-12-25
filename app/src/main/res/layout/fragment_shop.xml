@@ -45,7 +45,7 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <TextView
-            android:id="@+id/DASBOARD"
+            android:id="@+id/GEARITEM"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -64,9 +64,9 @@
             android:layout_marginStart="10dp"
             android:text="@string/elon_musk"
             android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="@+id/DASBOARD"
-            app:layout_constraintStart_toEndOf="@+id/DASBOARD"
-            app:layout_constraintTop_toTopOf="@+id/DASBOARD" />
+            app:layout_constraintBottom_toBottomOf="@+id/GEARITEM"
+            app:layout_constraintStart_toEndOf="@+id/GEARITEM"
+            app:layout_constraintTop_toTopOf="@+id/GEARITEM" />
 
         <GridLayout
             android:id="@+id/grid_layout"
